@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+   <!-- <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password "
+        android:id="@+id/q_rate"
+        android:textColor="#0033cc"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:maxLength="50"
+        android:id="@+id/rec_email"
+        android:layout_below="@+id/q_rate"
+        android:layout_centerHorizontal="true"
+        android:inputType="textEmailAddress"
+        android:hint="Enter email ID"
+        android:background="@null"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"/>
+    <View
+        android:id="@+id/v_cpw"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/rec_email"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="2dp"
+        android:background="#A5A2A3"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="17sp"
+
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+
+        android:background="#0033cc"
+        android:id="@+id/send_pw_rec"
+        android:textColor="#ffffff"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/rec_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+    <!--  <ImageView
+          android:layout_width="23dp"
+          android:layout_height="23dp"
+          android:id="@+id/imageView4"
+
+          android:layout_marginLeft="8sp"
+          android:layout_marginTop="5dp"
+          />
+  -->
+</RelativeLayout>

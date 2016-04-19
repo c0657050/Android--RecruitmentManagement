@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Recruitment</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main_screen">MainScreen</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_signup">Signup</string>
+    <string name="title_activity_home_employer">Home_employer</string>
+    <string name="title_activity_login_employer">Login_employer</string>
+    <string name="title_activity_home_employee">Home_employee</string>
+    <string name="title_activity_sign_up_employee">Sign_up_employee</string>
+    <string name="title_section1">Home</string>
+    <string name="title_section2">Settings</string>
+    <string name="title_section3">Logout</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="title_activity_home_employeer">Home_employeer</string>
+    <string name="title_activity_job_post">Job_post</string>
+    <string name="title_activity_posted_jobs">Posted_jobs</string>
+    <string name="title_activity_old_jobs">Old_jobs</string>
+    <string name="title_activity_post_description">Post_description</string>
+    <string name="title_activity_edit_posted_job">Edit_posted_job</string>
+    <string name="title_activity_grid">Grid</string>
+    <string name="title_activity_home_employee_tabs">Home_employee_tabs</string>
+    <string name="title_activity_find_jobs_list_employee">Find_jobs_list_employee</string>
+    <string name="title_activity_find_job_des_employee">Find_job_des_employee</string>
+    <string name="title_activity_resume_create_employee">Resume_create_employee</string>
+    <string name="title_activity_profile_employee">Profile_employee</string>
+    <string name="title_activity_seeker_des">Seeker_des</string>
+    <string name="title_activity_details_condidates">Details_condidates</string>
+
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.recruitment" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainScreen"
+            android:label="@string/title_activity_main_screen" >
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".Signup"
+            android:label="@string/title_activity_signup" >
+        </activity>
+        <activity
+            android:name=".Home_employer"
+            android:label="@string/title_activity_home_employer" >
+        </activity>
+        <activity
+            android:name=".Login_employer"
+            android:label="@string/title_activity_login_employer" >
+        </activity>
+        <activity
+            android:name=".Sign_up_employee"
+            android:label="@string/title_activity_sign_up_employee" >
+        </activity>
+        <activity
+            android:name=".Job_post"
+            android:label="@string/title_activity_job_post" >
+        </activity>
+        <activity
+            android:name=".Old_jobs"
+            android:label="@string/title_activity_old_jobs" >
+        </activity>
+        <activity
+            android:name=".Post_description"
+            android:label="@string/title_activity_post_description" >
+        </activity>
+        <activity
+            android:name=".Edit_posted_job"
+            android:label="@string/title_activity_edit_posted_job" >
+        </activity>
+        <activity
+            android:name=".Home_employee_tabs"
+            android:label="@string/title_activity_home_employee_tabs" >
+        </activity>
+        <activity
+            android:name=".Find_jobs_list_employee"
+            android:label="@string/title_activity_find_jobs_list_employee" >
+        </activity>
+        <activity
+            android:name=".Find_job_des_employee"
+            android:label="@string/title_activity_find_job_des_employee" >
+        </activity>
+        <activity
+            android:name=".Resume_create_employee"
+            android:label="@string/title_activity_resume_create_employee" >
+        </activity>
+        <activity
+            android:name=".Profile_employee"
+            android:label="@string/title_activity_profile_employee" >
+        </activity>
+        <activity
+            android:name=".Seeker_des"
+            android:label="@string/title_activity_seeker_des" >
+        </activity>
+        <activity
+            android:name=".Details_condidates"
+            android:label="@string/title_activity_details_condidates" >
+        </activity>
+    </application>
+
+</manifest>

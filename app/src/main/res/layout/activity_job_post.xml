@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView_jobpost"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bigbox"
+            android:id="@+id/rel_scrl_job_post"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:id="@+id/job_title"
+                android:hint="Job title"
+                android:paddingLeft="8dp"
+                android:background="@null"
+                />
+            <View
+                android:id="@+id/v_job_title"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/job_title"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="2dp"
+                android:background="#A5A2A3" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/job_details"
+                android:layout_below="@+id/v_job_title"
+
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:paddingLeft="8dp"
+                android:background="@null"
+                android:hint="Job details"/>
+            <View
+                android:id="@+id/v_job_details"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/job_details"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="2dp"
+                android:background="#A5A2A3" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/key_skill"
+                android:layout_below="@+id/v_job_details"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:paddingLeft="8dp"
+                android:background="@null"
+                android:hint="Key skills"
+                />
+            <View
+                android:id="@+id/v_key_skill"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/key_skill"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="2dp"
+                android:background="#A5A2A3" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rel_exp"
+                android:layout_below="@+id/v_key_skill"
+                android:layout_alignLeft="@+id/v_key_skill"
+                android:layout_alignStart="@+id/v_key_skill"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp">
+
+
+                <EditText
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/min_exp"
+                    android:hint="Min. exp."
+                    android:layout_marginRight="5dp"
+                    android:background="@null"
+
+                    />
+                <View
+                    android:id="@+id/v_min_exp"
+                    android:layout_width="80dp"
+                    android:layout_height="2dp"
+                    android:background="#A5A2A3"
+                    android:layout_below="@+id/min_exp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <EditText
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/man_exp"
+                    android:hint="Max. exp."
+                    android:background="@null"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <View
+                    android:id="@+id/v_man_exp"
+                    android:layout_width="80dp"
+                    android:layout_height="2dp"
+                    android:background="#A5A2A3"
+                    android:layout_alignTop="@+id/v_min_exp"
+                    android:layout_alignLeft="@+id/man_exp"
+                    android:layout_alignStart="@+id/man_exp" />
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/location"
+                android:layout_below="@+id/rel_exp"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:paddingLeft="8dp"
+                android:background="@null"
+                android:hint="Location" />
+
+            <View
+                android:id="@+id/v_location"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/location"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="2dp"
+                android:background="#A5A2A3" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/role"
+                android:layout_below="@+id/v_location"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:paddingLeft="8dp"
+                android:background="@null"
+                android:hint="Role"  />
+            <View
+                android:id="@+id/v_role"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/role"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="2dp"
+                android:background="#A5A2A3" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/industry"
+                android:layout_below="@+id/v_role"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:paddingLeft="8dp"
+                android:background="@null"
+                android:hint="Industry"  />
+            <View
+                android:id="@+id/v_industry"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/industry"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="2dp"
+                android:background="#A5A2A3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Job owner details"
+                android:id="@+id/text_owner"
+
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:paddingLeft="8dp"
+                android:layout_below="@+id/v_industry"
+                android:textSize="20sp"
+                android:textColor="#0033cc"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/name"
+                android:layout_below="@+id/text_owner"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:paddingLeft="8dp"
+                android:background="@null"
+                android:hint="Name" />
+            <View
+                android:id="@+id/v_name"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/name"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="2dp"
+                android:background="#A5A2A3" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/email_job_owner"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:paddingLeft="8dp"
+                android:background="@null"
+                android:hint="Email ID"
+                android:layout_below="@+id/name"
+                />
+            <View
+                android:id="@+id/v_email_job_owner"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/email_job_owner"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="2dp"
+                android:background="#A5A2A3" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Submit"
+                android:layout_marginTop="15dp"
+                android:id="@+id/submit_job"
+                android:textSize="28sp"
+                android:layout_below="@+id/v_email_job_owner"
+                android:layout_marginBottom="25dp"
+                android:textColor="#fff"
+                android:background="#0033cc"
+                android:paddingBottom="3dp"
+                android:paddingTop="2dp"
+                android:paddingRight="3dp"
+                android:paddingLeft="3dp"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

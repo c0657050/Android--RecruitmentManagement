@@ -1,0 +1,457 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+  >
+
+
+    <RelativeLayout
+        android:id="@+id/rel_top_profile_employee"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#0033cc" >
+
+        <TextView
+            android:id="@+id/txt_profile_epmy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Profile"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/img_profile_epmy_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/back" />
+    </RelativeLayout>
+    <!-- <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="60dp"
+          android:background="@drawable/my_groups_newgroup"
+         android:layout_below="@+id/rel_top_resume_employee"
+         android:layout_marginRight="10dp"
+         android:layout_marginLeft="10dp"
+         android:layout_marginTop="5dp"
+
+         >
+
+
+         </RelativeLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bigbox"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/rel_top_profile_employee">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView_profile"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:id="@+id/rel_profile_top"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+
+                >
+             <!--   <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/profile_user_id"
+                    android:hint="User ID"
+                    android:maxLines="1"
+
+                    android:paddingLeft="8dp"
+                    android:paddingTop="5dp"
+                    android:textSize="18sp"
+                    />
+                <View
+                    android:id="@+id/v_profile_user_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/profile_user_id"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#A5A2A3" />-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/profile_fname"
+                    android:hint="First name"
+                    android:maxLines="1"
+
+                    android:paddingLeft="8dp"
+
+
+                    android:paddingTop="5dp"
+                    android:textSize="18sp"
+                    />
+                <View
+                    android:id="@+id/v_profile_fname"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/profile_fname"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#A5A2A3" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/profile_lname"
+                    android:hint="Last name"
+                    android:maxLines="1"
+
+                    android:paddingLeft="8dp"
+
+                    android:layout_below="@+id/v_profile_fname"
+                    android:paddingTop="5dp"
+                    android:textSize="18sp"
+                    />
+                <View
+                    android:id="@+id/v_profile_lname"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/profile_lname"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#A5A2A3" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/profile_dob"
+                    android:hint="DOB"
+                    android:maxLines="1"
+
+                    android:paddingLeft="8dp"
+
+                    android:layout_below="@+id/v_profile_lname"
+                    android:paddingTop="5dp"
+                    android:textSize="18sp"
+                    />
+                <View
+                    android:id="@+id/v_profile_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/profile_dob"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#A5A2A3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/profile_gender"
+                    android:hint="Gender"
+                    android:maxLines="1"
+
+                    android:paddingLeft="8dp"
+                    android:paddingTop="5dp"
+                    android:textSize="18sp"
+
+                    android:layout_below="@+id/v_profile_dob"
+                    />
+                <View
+                    android:id="@+id/v_profile_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/profile_gender"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#A5A2A3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/profile_obj"
+                    android:hint="Objective"
+                    android:maxLines="1"
+
+                    android:paddingLeft="8dp"
+
+                    android:layout_below="@+id/v_profile_gender"
+                    android:paddingTop="5dp"
+                    android:textSize="18sp"
+                    />
+                <View
+                    android:id="@+id/v_profile_obj"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/profile_obj"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#A5A2A3" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/profile_area_int"
+                    android:hint="Area of interest"
+                    android:maxLines="1"
+
+                    android:paddingLeft="8dp"
+
+                    android:layout_below="@+id/v_profile_obj"
+                    android:paddingTop="5dp"
+                    android:textSize="18sp"
+                    />
+                <View
+                    android:id="@+id/v_profile_area_int"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/profile_area_int"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#A5A2A3" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/profile_primary"
+                    android:hint="Primary skills"
+                    android:maxLines="1"
+
+                    android:paddingLeft="8dp"
+
+                    android:layout_below="@+id/v_profile_area_int"
+                    android:paddingTop="5dp"
+                    android:textSize="18sp"
+                    />
+                <View
+                    android:id="@+id/v_profile_primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/profile_primary"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#A5A2A3" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/profile_exp"
+                    android:hint="Experience(in years)"
+
+                    android:maxLines="1"
+
+                    android:paddingLeft="8dp"
+                    android:paddingTop="5dp"
+                    android:textSize="18sp"
+
+                    android:layout_below="@+id/v_profile_primary"
+                    />
+                <View
+                    android:id="@+id/v_profile_exp"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/profile_exp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#A5A2A3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/profile_position"
+                    android:hint="Position"
+                    android:maxLines="1"
+
+                    android:paddingLeft="8dp"
+
+                    android:layout_below="@+id/v_profile_exp"
+                    android:paddingTop="5dp"
+                    android:textSize="18sp"
+                    />
+                <View
+                    android:id="@+id/v_profile_position"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/profile_position"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#A5A2A3" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/profile_prefered_loc"
+                    android:hint="Preferred location"
+                    android:maxLines="1"
+
+                    android:paddingLeft="8dp"
+
+                    android:layout_below="@+id/v_profile_position"
+                    android:paddingTop="5dp"
+                    android:textSize="18sp"
+
+                    />
+                <View
+                    android:id="@+id/v_profile_pre_loc"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/profile_prefered_loc"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#A5A2A3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/profile_quali"
+                    android:hint="Highest qualification"
+                    android:maxLines="1"
+
+                    android:paddingLeft="8dp"
+
+                    android:layout_below="@+id/v_profile_pre_loc"
+                    android:paddingTop="5dp"
+                    android:textSize="18sp"
+                    />
+                <View
+                    android:id="@+id/v_profile_quali"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/profile_quali"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#A5A2A3" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/profile_strength"
+                    android:hint="Strengths"
+                    android:maxLines="1"
+
+                    android:paddingLeft="8dp"
+
+                    android:layout_below="@+id/v_profile_quali"
+                    android:paddingTop="5dp"
+                    android:textSize="18sp"
+                    />
+                <View
+                    android:id="@+id/v_profile_strength"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/profile_strength"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#A5A2A3" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/profile_extra"
+                    android:hint="Extra curricular"
+                    android:maxLines="1"
+
+                    android:paddingLeft="8dp"
+
+                    android:layout_below="@+id/v_profile_strength"
+                    android:paddingTop="5dp"
+                    android:textSize="18sp"
+                    />
+                <View
+                    android:id="@+id/v_profile_extra"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/profile_extra"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#A5A2A3"
+                    android:layout_marginBottom="25dp"/>
+
+              <!--  <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Submit"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/profile_submit"
+                    android:textSize="28sp"
+                    android:layout_below="@+id/v_profile_extra"
+                    android:layout_marginBottom="25dp"
+                    android:textColor="#fff"
+                    android:background="#0033cc"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="3dp"
+                    android:layout_centerHorizontal="true" />
+-->
+
+            </RelativeLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.recruitment.Login">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/recruitment"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+
+        android:layout_below="@+id/imageView"
+        android:id="@+id/rel_login"
+        android:background="@drawable/bigbox"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:id="@+id/user_name_edit_empyee"
+            android:hint="Email ID"
+           android:inputType="textEmailAddress"
+            android:maxLength="50"
+            android:background="@null"/>
+
+        <View
+            android:id="@+id/v_name"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/user_name_edit_empyee"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="2dp"
+            android:background="#A5A2A3" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:inputType="textPassword"
+            android:background="@null"
+            android:ems="10"
+            android:hint="Password"
+            android:id="@+id/editText_pw_lo"
+android:layout_marginTop="20dp"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:layout_below="@+id/v_name"
+            android:layout_alignLeft="@+id/v_pw_lo"
+            android:layout_alignStart="@+id/v_pw_lo" />
+
+        <View
+            android:id="@+id/v_pw_lo"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/editText_pw_lo"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="2dp"
+            android:background="#A5A2A3" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/fw_seeker"
+            android:src="@drawable/fw"
+
+            android:layout_alignTop="@+id/editText_pw_lo"
+            android:layout_alignRight="@+id/v_pw_lo"
+            android:layout_alignEnd="@+id/v_pw_lo" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="24sp"
+        android:id="@+id/login_text"
+        android:textColor="#0033cc"
+        android:layout_below="@+id/checkBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Or"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/login_text"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="3dp"
+        android:textSize="15sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="New User Register Here!!"
+        android:id="@+id/textView_sign_up_employee"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="1dp"
+        android:layout_centerInParent="true"
+        android:textSize="24sp"
+        android:textColor="#0033cc"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login as employee"
+        android:id="@+id/textView3"
+        android:textColor="#A5A2A3"
+        android:textSize="18sp"
+        android:layout_above="@+id/rel_login"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/textView3"
+        android:layout_toStartOf="@+id/textView3" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remember me"
+        android:textSize="15sp"
+        android:id="@+id/checkBox"
+        android:layout_below="@+id/rel_login"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
+</RelativeLayout>

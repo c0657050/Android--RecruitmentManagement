@@ -1,0 +1,298 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.recruitment.Sign_up_employee"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/rel_sign_emplyee_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#0033cc" >
+
+        <TextView
+            android:id="@+id/txt_employee_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="SIGN UP"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/img_sign_employee"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/back" />
+    </RelativeLayout>
+
+   <!-- <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/rel_sign_emplyee_top"
+        >-->
+<!--    User id
+
+    First name
+
+    Last name
+
+    Phone number
+
+    Email id
+
+    Password
+
+    Confirm password-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bigbox"
+            android:id="@+id/rel_scrl2"
+            android:layout_below="@+id/rel_sign_emplyee_top"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+           >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/employee_fname_edit"
+                android:hint="First name"
+                android:maxLines="1"
+                android:maxLength="20"
+                android:paddingLeft="13dp"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                />
+
+
+            <View
+                android:id="@+id/v_fname"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/employee_fname_edit"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="2dp"
+                android:background="#A5A2A3" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/employee_lname_edit"
+                android:layout_below="@+id/employee_fname_edit"
+                android:hint="Last name"
+                android:maxLines="1"
+                android:maxLength="20"
+                android:paddingLeft="13dp"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                />
+
+
+            <View
+                android:id="@+id/v_lname"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/employee_lname_edit"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="2dp"
+                android:background="#A5A2A3" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/employee_email_edit"
+                android:layout_below="@+id/employee_lname_edit"
+                android:hint="Email ID"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="13dp"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                />
+
+
+            <View
+                android:id="@+id/v_email"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/employee_email_edit"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="2dp"
+                android:background="#A5A2A3" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/employee_cont_edit"
+                android:layout_below="@+id/employee_email_edit"
+                android:hint="Contact number"
+                android:inputType="number"
+
+                android:maxLines="1"
+                android:maxLength="10"
+                android:paddingLeft="13dp"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                />
+
+
+            <View
+                android:id="@+id/v_cont"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/employee_cont_edit"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="2dp"
+                android:background="#A5A2A3" />
+
+            <!--      <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="40dp"
+                   android:id="@+id/employee_qualification_edit"
+                   android:layout_below="@+id/employee_cont_edit"
+                   android:hint="Highest qualification"
+                   android:maxLines="1"
+                   android:maxLength="20"
+                   android:paddingLeft="13dp"
+                   android:layout_marginTop="20dp"
+                   android:background="@null"
+                   />
+
+
+               <View
+                   android:id="@+id/v_quali"
+                   android:layout_width="match_parent"
+                   android:layout_height="2dp"
+                   android:layout_below="@+id/employee_qualification_edit"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginRight="15dp"
+                   android:layout_marginTop="2dp"
+                   android:background="#A5A2A3" />
+            <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="40dp"
+                   android:id="@+id/employee_exp_edit"
+                   android:layout_below="@+id/employee_qualification_edit"
+                   android:hint="Experience"
+                   android:maxLines="1"
+                   android:maxLength="10"
+                   android:paddingLeft="13dp"
+                   android:layout_marginTop="20dp"
+                   android:background="@null"
+                   />
+
+
+               <View
+                   android:id="@+id/v_exp"
+                   android:layout_width="match_parent"
+                   android:layout_height="2dp"
+                   android:layout_below="@+id/employee_exp_edit"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginRight="15dp"
+                   android:layout_marginTop="2dp"
+                   android:background="#A5A2A3" />
+
+               <EditText
+                   android:layout_width="match_parent"
+                   android:layout_height="40dp"
+                   android:id="@+id/employee_add_edit"
+                   android:layout_below="@+id/employee_exp_edit"
+                   android:hint="Address"
+                   android:maxLength="70"
+
+                   android:paddingLeft="13dp"
+                   android:layout_marginTop="20dp"
+                   android:background="@null"
+                   />
+
+
+               <View
+                   android:id="@+id/v_add"
+                   android:layout_width="match_parent"
+                   android:layout_height="2dp"
+                   android:layout_below="@+id/employee_add_edit"
+                   android:layout_marginLeft="15dp"
+                   android:layout_marginRight="15dp"
+                   android:layout_marginTop="2dp"
+                   android:background="#A5A2A3" />
+   -->
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/employee_pw_edit"
+                android:layout_below="@+id/employee_cont_edit"
+                android:hint="Password"
+                android:paddingLeft="13dp"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:maxLength="15"
+                />
+
+
+            <View
+                android:id="@+id/v_pw"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/employee_pw_edit"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="2dp"
+                android:background="#A5A2A3" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/employee_cpw_edit"
+                android:layout_below="@+id/employee_pw_edit"
+                android:hint="Confirm Password"
+                android:paddingLeft="13dp"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:maxLength="15"
+                />
+
+
+            <View
+                android:id="@+id/v_cpw"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/employee_cpw_edit"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="2dp"
+                android:background="#A5A2A3"
+                android:layout_marginBottom="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Sign Up"
+                android:id="@+id/employee_submit"
+                android:textSize="20sp"
+                android:layout_below="@+id/v_cpw"
+                android:layout_marginBottom="20dp"
+                android:textColor="#fff"
+                android:background="#0033cc"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:paddingRight="3dp"
+                android:paddingLeft="3dp"
+
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+   <!-- </ScrollView>-->
+
+
+
+</RelativeLayout>

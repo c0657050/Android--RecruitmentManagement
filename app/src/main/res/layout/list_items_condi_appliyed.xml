@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="5dp"
+
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Frist Name:"
+        android:id="@+id/text_fname"
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Email Id:"
+        android:layout_below="@+id/text_con"
+        android:id="@+id/text_email"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Conact Number:"
+        android:layout_below="@+id/text_fname"
+        android:id="@+id/text_con"
+
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        />
+
+   <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More...."
+        android:id="@+id/text_more_app"
+        android:layout_below="@+id/text_email"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />-->
+
+    <!--<ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView2"
+        android:background="#d6d9d9d9"
+        android:src="@drawable/dots"
+        android:layout_alignTop="@+id/text_company"
+        android:layout_alignRight="@+id/text_more"
+        android:layout_alignEnd="@+id/text_more" />-->
+</RelativeLayout>

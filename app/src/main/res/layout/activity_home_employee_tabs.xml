@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ffffff"
+
+   >
+    <RelativeLayout
+        android:id="@+id/rel_job_edit_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0033cc" >
+
+        <TextView
+            android:id="@+id/txt_job_edit_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Employee"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/logout_employee"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/log_n"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="21dp"
+            android:layout_marginEnd="21dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/jobs_view_epmlyee"
+        android:layout_marginTop="43dp"
+        android:src="@drawable/findjob"
+        android:layout_below="@+id/rel_job_edit_top"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:id="@+id/resume"
+        android:src="@drawable/resume_a"
+        android:layout_above="@+id/profile_employee"
+        android:layout_alignLeft="@+id/jobs_view_epmlyee"
+        android:layout_alignStart="@+id/jobs_view_epmlyee"
+        android:layout_marginBottom="41dp" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/profile_employee"
+        android:src="@drawable/profile_b"
+        android:layout_marginBottom="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/resume"
+        android:layout_alignStart="@+id/resume" />
+
+</RelativeLayout>

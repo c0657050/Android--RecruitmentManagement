@@ -1,0 +1,386 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.recruitment.Edit_posted_job"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:id="@+id/rel_job_find_show"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#0033cc" >
+
+        <TextView
+            android:id="@+id/txt_job_find_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Job details"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/img_job_find_show"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/back" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bigbox"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/rel_job_find_show">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView_show_find"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:id="@+id/rel_scrl_job_show_find"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/job_id_show_find"
+                    android:hint="Job ID"
+                    android:maxLines="1"
+                    android:maxLength="30"
+                    android:paddingLeft="8dp"
+                    android:background="@null"
+                    />
+                <View
+                    android:id="@+id/v_job_show_find"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/job_id_show_find"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#A5A2A3" />
+
+
+              <!--  <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/compny_name_show_find"
+                    android:layout_below="@+id/v_job_show_find"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:paddingLeft="8dp"
+                    android:background="@null"
+                    android:hint="Company name"
+                    android:maxLines="1"
+                    android:maxLength="75"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"
+                    />
+                <View
+                    android:id="@+id/v_key_skill_show_find"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/compny_name_show_find"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#A5A2A3" />-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/job_title_show_find"
+                    android:hint="Job title"
+                    android:maxLines="1"
+                    android:maxLength="75"
+                    android:paddingLeft="8dp"
+                    android:background="@null"
+                    android:layout_below="@+id/v_job_show_find"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"
+                    />
+                <View
+                    android:id="@+id/v_job_title_show_find"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/job_title_show_find"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#A5A2A3" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/job_details_show_find"
+                    android:layout_below="@+id/v_job_title_show_find"
+                    android:maxLines="1"
+                    android:maxLength="70"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:paddingLeft="8dp"
+                    android:background="@null"
+                    android:hint="Job details"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"/>
+                <View
+                    android:id="@+id/v_job_details_show_find"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/job_details_show_find"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#A5A2A3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/salary_show_find"
+                    android:layout_below="@+id/v_job_details_show_find"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:paddingLeft="8dp"
+                    android:background="@null"
+                    android:hint="Salary"
+                    android:maxLines="1"
+                    android:inputType="number"
+
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"/>
+
+                <View
+                    android:id="@+id/v_salary_show_find"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/salary_show_find"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#A5A2A3" />
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/exp_show_find"
+                    android:hint="Experience"
+
+                    android:background="@null"
+                    android:inputType="number"
+                    android:maxLines="1"
+           
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:paddingLeft="8dp"
+                    android:layout_below="@+id/v_salary_show_find"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"
+                    />
+                <View
+                    android:id="@+id/v_min_exp_show_find"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#A5A2A3"
+                    android:layout_below="@+id/exp_show_find"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/location_show_find"
+                    android:layout_below="@+id/v_min_exp_show_find"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:paddingLeft="8dp"
+                    android:background="@null"
+                    android:hint="Location"
+                    android:maxLines="1"
+                    android:maxLength="70"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"/>
+
+                <View
+                    android:id="@+id/v_location_show_find"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/location_show_find"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#A5A2A3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/role_show_find"
+                    android:layout_below="@+id/v_location_show_find"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:paddingLeft="8dp"
+                    android:background="@null"
+                    android:hint="Role"
+                    android:maxLines="1"
+                    android:maxLength="50"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"/>
+                <View
+                    android:id="@+id/v_role_show_find"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/role_show_find"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#A5A2A3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/job_type_show_find"
+                    android:layout_below="@+id/v_role_show_find"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:paddingLeft="8dp"
+                    android:background="@null"
+                    android:hint="Job type: Full/part time"
+                    android:maxLines="1"
+                    android:maxLength="50"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"
+                    />
+                <View
+                    android:id="@+id/v_industry_show_find"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/job_type_show_find"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#A5A2A3" />
+
+              <!--  <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Job owner details"
+                    android:id="@+id/text_owner_show_find"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:paddingLeft="8dp"
+                    android:layout_below="@+id/v_industry_show_find"
+                    android:textSize="20sp"
+                    android:textColor="#0033cc"
+
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/name_show_find"
+                    android:layout_below="@+id/text_owner_show_find"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:paddingLeft="8dp"
+                    android:background="@null"
+                    android:hint="Name"
+                    android:maxLines="1"
+                    android:maxLength="30"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"/>
+                <View
+                    android:id="@+id/v_name_show_find"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/name_show_find"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#A5A2A3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="textEmailAddress"
+                    android:ems="10"
+                    android:id="@+id/email_job_owner_show_find"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:paddingLeft="8dp"
+                    android:background="@null"
+                    android:hint="Email ID"
+                    android:layout_below="@+id/name_show_find"
+                    android:maxLines="1"
+                    android:maxLength="40"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"
+                    />
+                <View
+                    android:id="@+id/v_email_job_owner_show_find"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/email_job_owner_show_find"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#A5A2A3" />-->
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="Apply"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/submit_job_show_find"
+                    android:textSize="18sp"
+                    android:layout_below="@+id/v_industry_show_find"
+                    android:layout_marginBottom="25dp"
+                    android:textColor="#fff"
+                    android:background="#0033cc"
+                   android:layout_centerHorizontal="true"
+                    android:textAllCaps="false"/>
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
